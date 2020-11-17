@@ -15,8 +15,8 @@ const int FRAMES_DELAY = 10; //Minimum number of calls to wait before combos are
 const SceCtrlButtons inOutCombo = SCE_CTRL_LTRIGGER | SCE_CTRL_RTRIGGER | SCE_CTRL_CIRCLE;      //L + R + O   => open/close debug menu (if current game mode is 0)
 const SceCtrlButtons L3_emu_buttons = SCE_CTRL_LTRIGGER | SCE_CTRL_RTRIGGER | SCE_CTRL_LEFT;    //L + R + <-  => emulate L3 press (does nothing)
 const SceCtrlButtons R3_emu_buttons = SCE_CTRL_LTRIGGER | SCE_CTRL_RTRIGGER | SCE_CTRL_RIGHT;   //L + R + ->  => emulate R3 press (does nothing)
-int *pGAMEMODE = 0x8197CFC8;
-unsigned int* pPRESSED_KEYS = 0x818D15A4; //unsure tbh
+int *pGAMEMODE = (int*)0x8197CFC8;
+unsigned int* pPRESSED_KEYS = (unsigned int*)0x818D15A4; //unsure tbh
 
 static int ctrl_mtx = 0;
 static int counter = 0;
