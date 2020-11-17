@@ -9,4 +9,5 @@ All those combos are editable, see main.c
 
 # Building
 `mkdir build && cd build && cmake .. && make`
+
 Requires DolceSDK
